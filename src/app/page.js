@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import DevProcess from "@/components/DevProcess";
+import FAQSection from "@/components/FAQSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import Navbar from "@/components/Navbar";
 import PertnerCompany from "@/components/PertnerCompany";
@@ -15,11 +16,12 @@ export default function Home() {
         <Banner></Banner>
       </header>
 
-      <main className="pt-10">
+      <main className="pt-10 text-black">
         <ServicesSection></ServicesSection>
         <DevProcess></DevProcess>
         <FeaturesSection></FeaturesSection>
         <PertnerCompany></PertnerCompany>
+        <FAQSection></FAQSection>
       </main>
     </div>
   );
