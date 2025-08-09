@@ -1,6 +1,6 @@
 import ContactBtn from "@/shared/ContactBtn";
 import React from "react";
-import Service from "./Service";
+import Service from "./BannerService";
 import Image from "next/image";
 const Banner = () => {
   return (

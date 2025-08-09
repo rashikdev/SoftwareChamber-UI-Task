@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import Navbar from "@/components/Navbar";
+import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       </header>
 
       <main className="w-11/12 mx-auto pt-10">
-        
+        <ServicesSection></ServicesSection>
       </main>
     </div>
   );
