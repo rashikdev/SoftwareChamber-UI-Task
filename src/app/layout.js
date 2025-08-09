@@ -14,6 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link
+        rel="shortcut icon"
+        href="/assets/favIcon.png"
+        type="image/x-icon"
+      />
       <body className={taskFont.className}>{children}</body>
     </html>
   );
