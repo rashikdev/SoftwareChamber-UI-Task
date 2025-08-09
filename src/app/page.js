@@ -4,6 +4,7 @@ import CustomerReviewSection from "@/components/CustomerReviewSection";
 import DevProcess from "@/components/DevProcess";
 import FAQSection from "@/components/FAQSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import PertnerCompany from "@/components/PertnerCompany";
 import ServicesSection from "@/components/ServicesSection";
@@ -27,6 +28,7 @@ export default function Home() {
         <CustomerReviewSection></CustomerReviewSection>
         <ContactSection></ContactSection>
       </main>
+      <Footer></Footer>
     </div>
   );
 }
