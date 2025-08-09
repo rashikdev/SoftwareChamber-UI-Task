@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import CustomerReviewSection from "@/components/CustomerReviewSection";
 import DevProcess from "@/components/DevProcess";
 import FAQSection from "@/components/FAQSection";
 import FeaturesSection from "@/components/FeaturesSection";
@@ -22,6 +23,7 @@ export default function Home() {
         <FeaturesSection></FeaturesSection>
         <PertnerCompany></PertnerCompany>
         <FAQSection></FAQSection>
+        <CustomerReviewSection></CustomerReviewSection>
       </main>
     </div>
   );
