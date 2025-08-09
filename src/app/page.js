@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import DevProcess from "@/components/DevProcess";
+import FeaturesSection from "@/components/FeaturesSection";
 import Navbar from "@/components/Navbar";
 import ServicesSection from "@/components/ServicesSection";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <main className="pt-10">
         <ServicesSection></ServicesSection>
         <DevProcess></DevProcess>
+        <FeaturesSection></FeaturesSection>
       </main>
     </div>
   );
