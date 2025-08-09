@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import DevProcess from "@/components/DevProcess";
 import FeaturesSection from "@/components/FeaturesSection";
 import Navbar from "@/components/Navbar";
+import PertnerCompany from "@/components/PertnerCompany";
 import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <ServicesSection></ServicesSection>
         <DevProcess></DevProcess>
         <FeaturesSection></FeaturesSection>
+        <PertnerCompany></PertnerCompany>
       </main>
     </div>
   );

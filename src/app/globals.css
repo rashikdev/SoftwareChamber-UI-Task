@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --primary-color: #00FFE0;
-  --secondary-color: #2CCEBA;
+  --primary-color: #00ffe0;
+  --secondary-color: #2cceba;
+}
+
+.gradientBorder {
+  border: 2px solid transparent;
+  border-top-color: #2cceba;
+  border-bottom-color: #083a34;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-image: linear-gradient(to bottom, #2cceba, #083a34) 1;
 }

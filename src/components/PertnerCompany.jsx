@@ -1,0 +1,120 @@
+import ContactBtn from "@/shared/ContactBtn";
+import SmarterIdia from "@/shared/SmarterIdia";
+import Image from "next/image";
+import React from "react";
+import MarqueeSection from "./MerqueeSection";
+
+const PertnerCompany = () => {
+  const pertners = [
+    {
+      id: 1,
+      name: "Spotify",
+      icon: "/assets/pertnersImg/spotify.png",
+    },
+    {
+      id: 2,
+      name: "TalentQl",
+      icon: "/assets/pertnersImg/talentql.png",
+    },
+    {
+      id: 3,
+      name: "DropBox",
+      icon: "/assets/pertnersImg/dropbox.png",
+    },
+    {
+      id: 4,
+      name: "Fliqpay",
+      icon: "/assets/pertnersImg/fliqpay.png",
+    },
+    {
+      id: 5,
+      name: "Slack",
+      icon: "/assets/pertnersImg/slack.png",
+    },
+  ];
+
+  const firstPertners = pertners.slice(0, 2);
+  const secondPertners = pertners.slice(2, 4);
+  const thirdPertners = pertners.splice(4)[0];
+
+  return (
+    <section className="bg-[url('/assets/pertnersImg/BannerGlow1.png')] bg-cover bg-no-repeat bg-center bg-[#0E0E17] relative text-white py-20 md:px-8 px-5">
+      {/* text and pertners logo */}
+      <div className="flex flex-col md:flex-row justify-between items-center">
+        <h3 className="md:text-[93px] text-4xl md:leading-24 text-center md:text-left">
+          Our Stack Powers of <br className="hidden md:block"/> the{" "}
+          <span className="text-[#808080]">World’s</span> Most <br className="hidden md:block"/>
+          <span className="text-[#808080]">Beloved Companies</span>
+        </h3>
+        <div className="">
+          <div className="flex gap-5 my-5">
+            {firstPertners.map((pertner) => (
+              <div
+                key={pertner.id}
+                className="flex items-center gap-4 bg-gradient-to-b from-[#2CCEBA] to-[#2CCEBA]/5 px-6 py-2 rounded-full"
+              >
+                <div className="bg-white p-2 md:p-3 rounded-full">
+                  <img src={pertner.icon} alt="" className="md:w-6 w-5" />
+                </div>
+                <h4 className="md:text-2xl">{pertner.name}</h4>
+              </div>
+            ))}
+          </div>
+          <div className="flex gap-5 my-5 md:-ml-18">
+            {secondPertners.map((pertner) => (
+              <div
+                key={pertner.id}
+                className="flex items-center gap-4 bg-gradient-to-b from-[#2CCEBA] to-[#2CCEBA]/5 px-6 py-2 rounded-full"
+              >
+                <div className="bg-white p-2 md:p-3 rounded-full">
+                  <img src={pertner.icon} alt="" className="md:w-6 md:h-auto w-5 h-5" />
+                </div>
+                <h4 className="md:text-2xl">{pertner.name}</h4>
+              </div>
+            ))}
+          </div>
+          <div className="md:ml-14 ml-24">
+            <div className="flex items-center gap-4 bg-gradient-to-b from-[#2CCEBA] to-[#2CCEBA]/5 px-6 w-fit py-2 rounded-full">
+              <div className="bg-white p-2 md:p-3 rounded-full">
+                <img src={thirdPertners.icon} alt="" className="md:w-6 w-5" />
+              </div>
+              <h4 className="md:text-2xl">{thirdPertners.name}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative rounded-3xl mt-20 p-[1.58px] bg-gradient-to-b from-[#2CCEBA] to-[#083a34]">
+        <div className="rounded-3xl bg-gradient-to-b from-[#011513] to-[#011f1b] py-20 md:px-8 px-2 flex flex-col md:gap-20 gap-10 items-center text-center">
+          <SmarterIdia />
+          <div className="bg-white p-3 md:rounded-4xl rounded-3xl w-fit mx-auto">
+            <img
+              src="/assets/pertnersImg/partnerCenterIcon.png"
+              alt=""
+              className="md:w-20 w-14 p-4"
+            />
+          </div>
+          <h4 className="text-[5vw]">
+            Uncover the Design and Development Projects{" "}
+            <span className="text-[#808080]">That Set Us Apart</span>
+          </h4>
+          <ContactBtn></ContactBtn>
+        </div>
+      </div>
+
+      <div className="mt-20">
+        <SmarterIdia />
+        <MarqueeSection></MarqueeSection>
+      </div>
+      <Image
+        src="/assets/pertnersImg/BannerGlow1.png"
+        alt=""
+        width={500}
+        height={600}
+        className="absolute top-0 left-0 h-full w-full border border-white"
+      />
+    </section>
+  );
+};
+
+export default PertnerCompany;

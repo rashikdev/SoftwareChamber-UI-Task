@@ -56,7 +56,7 @@ const FeaturesSection = () => {
       </div>
 
       {/* feature cards */}
-      <div className="w-11/12 mx-auto grid md:grid-cols-4 gap-5">
+      <div className="w-11/12 mx-auto grid md:grid-cols-4 gap-5 pb-10">
         {features.map((feature) => (
           <div
             key={feature.id}
