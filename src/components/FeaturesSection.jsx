@@ -34,7 +34,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="my-10 space-y-8">
+    <section id="features" className="my-10 space-y-8">
       {/* text content */}
       <div className="text-center md:w-7/12 mx-auto space-y-8">
         <h3 className="md:text-7xl text-5xl">
@@ -77,7 +77,7 @@ const FeaturesSection = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

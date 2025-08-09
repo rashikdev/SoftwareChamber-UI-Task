@@ -1,3 +1,4 @@
+import BacktoTopBtn from "@/components/BacktoTopBtn";
 import Banner from "@/components/Banner";
 import ContactSection from "@/components/ContactSection";
 import CustomerReviewSection from "@/components/CustomerReviewSection";
@@ -28,6 +29,9 @@ export default function Home() {
         <CustomerReviewSection></CustomerReviewSection>
         <ContactSection></ContactSection>
       </main>
+      <div className="fixed md:bottom-8 bottom-5 md:right-10 right-4 z-50">
+        <BacktoTopBtn></BacktoTopBtn>
+      </div>
       <Footer></Footer>
     </div>
   );

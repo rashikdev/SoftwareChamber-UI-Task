@@ -5,7 +5,7 @@ import Image from "next/image";
 import SmarterIdia from "@/shared/SmarterIdia";
 const Banner = () => {
   return (
-    <div className="pt-[111px] md:pb-[100px] pb-[50px] relative">
+    <div className="pt-[111px] md:pb-[100px] pb-[50px] relative bg-[url('/assets/BannerImage.png')] bg-no-repeat bg-cover">
       <div className="w-11/12 mx-auto">
         <SmarterIdia></SmarterIdia>
         <div className="text-center text-[32px] md:text-[120px] -space-y-10 bg-gradient-to-b from-[#00FFE0] to-white bg-clip-text text-transparent border-white mt-[30px] md:mt-0">
@@ -33,7 +33,7 @@ const Banner = () => {
         </div>
       </div>
       <Service></Service>
-      <div>
+      {/* <div>
         <Image
           src="/assets/leftsideImg.png"
           alt="banner star"
@@ -83,7 +83,7 @@ const Banner = () => {
           height={300}
           className="w-[300px] h-auto absolute md:-top-10 md:left-[20%] left-0 top-0 animate-pulse"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

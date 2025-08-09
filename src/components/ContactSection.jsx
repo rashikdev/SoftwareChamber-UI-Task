@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
   return (
-    <div className="py-20 w-11/12 mx-auto">
+    <div id="contact" className="py-20 w-11/12 mx-auto">
       {/* text content */}
       <div className="text-center space-y-5">
         <h4 className="md:text-7xl text-3xl font-bold">

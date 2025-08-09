@@ -7,7 +7,7 @@ const Service = () => {
     <div className="md:my-16 mt-16 px-4">
       <div className="relative flex justify-center">
         {/* Main Card */}
-        <div className="relative bg-white/10 md:w-[calc(100vw-800px)] p-6 flex flex-col md:flex-row gap-6 rounded-4xl lg:h-[40vh]">
+        <div className="relative bg-gradient-to-br from-[#7DFDF3]/10 to-[#7DFDF3]/20 md:w-[calc(100vw-800px)] p-6 flex flex-col md:flex-row gap-6 rounded-4xl lg:h-[40vh] backdrop-blur-sm">
           {/* Image Section */}
           <div className="flex-1 flex justify-center">
             <Image

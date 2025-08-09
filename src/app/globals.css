@@ -6,11 +6,7 @@
   --secondary-color: #2cceba;
 }
 
-.gradientBorder {
-  border: 2px solid transparent;
-  border-top-color: #2cceba;
-  border-bottom-color: #083a34;
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
-  border-image: linear-gradient(to bottom, #2cceba, #083a34) 1;
+html {
+  scroll-behavior: smooth;
 }
+
