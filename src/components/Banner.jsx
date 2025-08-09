@@ -2,16 +2,12 @@ import ContactBtn from "@/shared/ContactBtn";
 import React from "react";
 import Service from "./BannerService";
 import Image from "next/image";
+import SmarterIdia from "@/shared/SmarterIdia";
 const Banner = () => {
   return (
-    <div className="mt-[111px] md:pb-[100px] pb-[50px] relative">
+    <div className="pt-[111px] md:pb-[100px] pb-[50px] relative">
       <div className="w-11/12 mx-auto">
-        <p className="bg-radial from-black to-[#2CCEBA]/60 border-[1.78px] border-[#2CCEBA] rounded-full text-center w-fit mx-auto md:px-[18px] md:py-3 px-4 py-1 flex items-center gap-2 text-[18px]">
-          <span className="">
-            <img src="/assets/Staricon.png" alt="" className="w-4" />
-          </span>
-          <span>Smarter Idea, instant soultions</span>
-        </p>
+        <SmarterIdia></SmarterIdia>
         <div className="text-center text-[32px] md:text-[120px] -space-y-10 bg-gradient-to-b from-[#00FFE0] to-white bg-clip-text text-transparent border-white mt-[30px] md:mt-0">
           <p>We are your Software</p>
           <p className="flex justify-center items-center gap-5 h-[140px]">

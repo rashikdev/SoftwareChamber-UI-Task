@@ -34,7 +34,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="px-4 lg:px-12">
+    <section className="w-11/12 mx-auto px-4 lg:px-12">
       {/* Services Text */}
       <div className="text-center">
         <p className="text-3xl sm:text-4xl lg:text-[4.5rem] leading-tight font-semibold">

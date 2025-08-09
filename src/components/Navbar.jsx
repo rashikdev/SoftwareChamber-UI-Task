@@ -4,7 +4,7 @@ import { TbMenu3 } from "react-icons/tb";
 import ContactBtn from "@/shared/ContactBtn";
 const Navbar = () => {
   return (
-    <nav className="w-11/12 mx-auto sticky top-10 z-50">
+    <nav className="w-11/12 mx-auto">
       <ul className="flex justify-between items-center">
         <li>
           <Logo></Logo>
