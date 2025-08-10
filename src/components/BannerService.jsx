@@ -20,7 +20,7 @@ const Service = () => {
           </div>
 
           {/* Text Section */}
-          <div className="flex-1 flex flex-col justify-center items-start gap-5 text-center md:text-left">
+          <div className="flex-1 flex flex-col justify-center md:items-start items-center gap-5 text-center md:text-left">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
               Software Service Solutions
             </h3>
@@ -29,7 +29,7 @@ const Service = () => {
               manage projects with <br className="hidden sm:block" />
               precision tools.
             </p>
-            <button className="text-lg sm:text-xl bg-[#081412e6] rounded-full px-8 py-3 hover:bg-[#081412] transition">
+            <button className="text-lg sm:text-xl bg-[#122421e6] rounded-full px-8 py-3 hover:bg-black transition hover:scale-95 cursor-pointer w-full md:w-auto">
               Discover
             </button>
           </div>
@@ -48,7 +48,7 @@ const Service = () => {
             </div>
           </div>
           {/* Bottom Right */}
-          <div className="absolute bottom-[15%] -right-39 translate-x-1/2 hidden md:flex items-end">
+          <div className="absolute bottom-[15%] -right-41 translate-x-1/2 hidden md:flex items-end">
             <img
               src="/assets/icon/servicevector2.png"
               alt=""
@@ -72,7 +72,7 @@ const Service = () => {
           </div>
 
           {/* Bottom Left */}
-          <div className="absolute bottom-[15%] -left-45 -translate-x-1/2 hidden md:flex items-end">
+          <div className="absolute bottom-[15%] -left-46 -translate-x-1/2 hidden md:flex items-end">
             <div className="-mb-6">
               <ServiceLabel label="Mobile App Development" />
             </div>

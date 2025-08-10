@@ -1,14 +1,21 @@
+"use client";
 import ContactBtn from "@/shared/ContactBtn";
 import React from "react";
 import Service from "./BannerService";
 import Image from "next/image";
 import SmarterIdia from "@/shared/SmarterIdia";
+import { motion } from "motion/react";
 const Banner = () => {
+
   return (
     <div className="pt-[111px] md:pb-[100px] pb-[50px] relative bg-[url('/assets/BannerImage.png')] bg-no-repeat bg-cover">
       <div className="w-11/12 mx-auto">
         <SmarterIdia></SmarterIdia>
-        <div className="text-center text-[32px] md:text-[120px] -space-y-10 bg-gradient-to-b from-[#00FFE0] to-white bg-clip-text text-transparent border-white mt-[30px] md:mt-0">
+        <motion.div
+        initial={{ opacity: 0, y: 24, scale: 0.9 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="text-center text-[32px] md:text-[120px] -space-y-10 bg-gradient-to-b from-[#00FFE0] to-white bg-clip-text text-transparent border-white mt-[30px] md:mt-0">
           <p>We are your Software</p>
           <p className="flex justify-center items-center gap-5 h-[140px]">
             Development{" "}
@@ -27,7 +34,7 @@ const Banner = () => {
             {""}Team
           </p>
           <p>in The Cloud</p>
-        </div>
+        </motion.div>
         <div className="flex justify-center mt-[30px]">
           <ContactBtn></ContactBtn>
         </div>

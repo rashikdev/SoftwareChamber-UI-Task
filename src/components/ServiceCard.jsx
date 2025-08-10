@@ -1,4 +1,6 @@
+"use client";
 import { GoArrowUpRight } from "react-icons/go";
+import { motion } from "motion/react";
 
 const ServiceCard = () => {
   const services = [
@@ -19,29 +21,56 @@ const ServiceCard = () => {
     },
   ];
 
+  const containerVariant = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.25,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const itemVariant = {
+    hidden: { opacity: 0, y: 40 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <motion.div
+      className="grid grid-cols-1 md:grid-cols-3 gap-6"
+      variants={containerVariant}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
       {services.map((service) => (
-        <div
-          key={service.id}
-          className={`md:h-[420px] h-fit p-6 rounded-4xl flex flex-col gap-4 md:gap-0 justify-between hover:bg-[#27B4A3] hover:text-white cursor-default transition-all duration-300 group ${
-            service.id === 2 ? "bg-[#27B4A3] text-white" : "bg-[#f3f3f3]"
-          }`}
-        >
-          <h3 className="lg:text-[44px] text-3xl">{service.title}</h3>
-          <p
-            className={`text-2xl group-hover:text-white ${
-              service.id === 2 ? "text-white" : "text-[#808080]"
+        <motion.div key={service.id} variants={itemVariant}>
+          <motion.div
+            className={`md:h-[420px] h-fit p-6 rounded-4xl flex flex-col gap-4 md:gap-0 justify-between hover:bg-[#27B4A3] hover:text-white cursor-default transition-all duration-300 group ${
+              service.id === 2 ? "bg-[#27B4A3] text-white" : "bg-[#f3f3f3]"
             }`}
           >
-            {service.text}
-          </p>
-          <button className="text-2xl bg-white text-black rounded-full p-4 shadow-lg w-fit group-hover:translate-y-[-10px] group-hover:translate-x-[10px] transition-all duration-300 cursor-pointer">
-            <GoArrowUpRight />
-          </button>
-        </div>
+            <h3 className="lg:text-[44px] text-3xl">{service.title}</h3>
+            <p
+              className={`text-2xl group-hover:text-white ${
+                service.id === 2 ? "text-white" : "text-[#808080]"
+              }`}
+            >
+              {service.text}
+            </p>
+            <button className="text-2xl bg-white text-black rounded-full p-4 shadow-lg w-fit group-hover:translate-y-[-10px] group-hover:translate-x-[10px] transition-all duration-300 cursor-pointer">
+              <GoArrowUpRight />
+            </button>
+          </motion.div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
