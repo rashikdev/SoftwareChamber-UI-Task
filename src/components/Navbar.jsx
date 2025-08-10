@@ -22,7 +22,7 @@ const Navbar = () => {
             <motion.button
               whileTap={{ scale: 0.9 }}
               onClick={() => setOpen(!open)}
-              className="w-[40px] h-[40px] md:w-[55px] md:h-[55px] rounded-full flex items-center justify-center bg-gradient-to-r from-white/10 to-white/50 border-[1.78px] border-zinc-400 p-2 cursor-pointer z-50 backdrop-blur-md"
+              className="w-[40px] h-[40px] md:w-[55px] md:h-[55px] rounded-full flex items-center justify-center bg-gradient-to-r from-zinc-800 to-zinc-400 border-[1.78px] border-zinc-400 p-2 cursor-pointer z-50 backdrop-blur-md"
             >
               <TbMenu3 size={30} className="rotate-x-180" />
             </motion.button>

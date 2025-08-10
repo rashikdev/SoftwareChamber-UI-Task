@@ -20,7 +20,7 @@ export default function Home() {
         <Banner></Banner>
       </header>
 
-      <main className="pt-10 text-black">
+      <main className="pt-10 text-black overflow-hidden">
         <ServicesSection></ServicesSection>
         <DevProcess></DevProcess>
         <FeaturesSection></FeaturesSection>
@@ -29,9 +29,7 @@ export default function Home() {
         <CustomerReviewSection></CustomerReviewSection>
         <ContactSection></ContactSection>
       </main>
-      <div className="fixed md:bottom-8 bottom-5 md:right-10 right-4 z-50">
-        <BacktoTopBtn></BacktoTopBtn>
-      </div>
+      <BacktoTopBtn></BacktoTopBtn>
       <Footer></Footer>
     </div>
   );

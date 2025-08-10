@@ -4,7 +4,7 @@ import { GoArrowRight } from "react-icons/go";
 import ServiceCard from "./ServiceCard";
 import CountData from "./CountData";
 import ServicesTitle from "./ServicesTitle";
-import { motion, scale } from "motion/react";
+import { motion } from "motion/react";
 
 const ServicesSection = () => {
   const demoDatas = [
@@ -46,7 +46,8 @@ const ServicesSection = () => {
         <motion.div
           initial={{ scale: 0.9 }}
           whileInView={{ scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="flex justify-center"
         >
           <Image
@@ -98,7 +99,7 @@ const ServicesSection = () => {
               />
             </span>
           </h3>
-          <p className="flex items-center gap-2 font-semibold group cursor-pointer">
+          <p className="flex items-center gap-2 font-semibold group cursor-pointer md:text-xl hover:text-[#27B4A3]">
             All Services{" "}
             <span className="mt-1 group-hover:translate-x-2 group-hover:bg-[#27B4A3] group-hover:text-white transition-all duration-300 bg-gray-100 p-1 rounded-full">
               <GoArrowRight size={20} />

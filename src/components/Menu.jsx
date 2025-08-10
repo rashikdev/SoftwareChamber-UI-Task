@@ -5,8 +5,8 @@ import { delay } from "motion";
 
 const Menu = ({ setOpen }) => {
   const menuItems = [
-    { id: 1, label: "Features", href: "#features" },
-    { id: 2, label: "Services", href: "#services" },
+    { id: 1, label: "Services", href: "#services" },
+    { id: 2, label: "Features", href: "#features" },
     { id: 3, label: "Contact", href: "#contact" },
   ];
 
@@ -32,7 +32,7 @@ const Menu = ({ setOpen }) => {
       initial={{ x: "100%" }}
       animate={{ x: "0%" }}
       transition={{ duration: 0.4 }}
-      className="md:w-[28vw] w-[50vw] h-[100vh] fixed md:top-0 md:right-0 top-20 right-0 text-white p-8 text-center md:pt-40 bg-gradient-to-br from-[#34bbab]/30 to-[#081412]/30 backdrop-blur-md"
+      className="md:w-[28vw] w-[50vw] h-[100vh] fixed md:top-0 md:right-0 top-0 right-0 text-white p-8 text-center md:pt-40 pt-30 bg-gradient-to-br from-[#34bbab]/30 to-[#081412]/30 backdrop-blur-md"
     >
       {/* Menu */}
       <motion.ul

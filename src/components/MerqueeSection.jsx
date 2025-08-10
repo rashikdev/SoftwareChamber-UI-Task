@@ -38,8 +38,8 @@ const MarqueeSection = () => {
             key={item.id}
             className="flex gap-10 items-center mx-2 p-4 rounded-xl shadow-md"
           >
-            <p className="text-2xl font-medium">{item.title}</p>
-            <img src={item.img} alt={item.title} className="w-[200px] h-auto" />
+            <p className="md:text-2xl font-medium">{item.title}</p>
+            <img src={item.img} alt={item.title} className="md:w-[200px] w-[100px] h-auto" />
           </div>
         ))}
       </Marquee>
@@ -47,10 +47,10 @@ const MarqueeSection = () => {
         {merqueeData.map((item) => (
           <div
             key={item.id}
-            className="flex gap-8 items-center mx-8 p-4 rounded-xl shadow-md"
+            className="flex gap-8 items-center md:mx-8 p-4 rounded-xl shadow-md"
           >
-            <p className="text-2xl font-medium">{item.title}</p>
-            <img src={item.img} alt={item.title} className="w-[200px] h-auto" />
+            <p className="md:text-2xl font-medium">{item.title}</p>
+            <img src={item.img} alt={item.title} className="md:w-[200px] w-[100px] h-auto" />
           </div>
         ))}
       </Marquee>

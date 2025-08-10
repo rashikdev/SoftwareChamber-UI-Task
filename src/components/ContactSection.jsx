@@ -1,25 +1,44 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import ContactForm from "./ContactForm";
+import { motion } from "motion/react";
 
 const ContactSection = () => {
   return (
     <div id="contact" className="py-20 w-11/12 mx-auto">
       {/* text content */}
-      <div className="text-center space-y-5">
-        <h4 className="md:text-7xl text-3xl font-bold">
-          Let’s talk about your next <br className="hidden md:block"/> project.
+      <div className="text-center space-y-7">
+        <motion.h4
+          initial={{ opacity: 0, x: 54 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
+          className="md:text-7xl text-3xl font-bold"
+        >
+          Let’s talk about your next <br className="hidden md:block" /> project.
           <span className="text-[#808080]">We’re here to help.</span>
-        </h4>
-        <p className="text-xl md:w-120 mx-auto text-[#808080]">
+        </motion.h4>
+        <motion.p
+          initial={{ opacity: 0, y: 54 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
+          className="text-xl md:w-130 mx-auto text-[#808080]"
+        >
           Deliver personalized experiences to your customers with AI-powered
           recommendation engines and dynamic content generation.
-        </p>
+        </motion.p>
       </div>
 
       {/* contact form */}
       <div className="flex items-center md:gap-8 mt-20">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          // viewport={{ once: true, amount: 0.8 }}
+        >
           <Image
             src="/assets/contact.png"
             alt=""
@@ -29,10 +48,15 @@ const ContactSection = () => {
             placeholder="blur"
             blurDataURL="/assets/contact.png"
           />
-        </div>
-        <div className="flex-1">
+        </motion.div>
+        <motion.div
+        initial={{ opacity: 0, x: 124 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        // viewport={{ once: true, amount: 0.8 }}
+        className="flex-1">
           <ContactForm></ContactForm>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

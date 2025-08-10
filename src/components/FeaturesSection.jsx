@@ -56,14 +56,15 @@ const FeaturesSection = () => {
   };
 
   return (
-    <section id="features" className="my-10 space-y-8">
+    <section id="features" className="mb-10 space-y-8">
       {/* text content */}
-      <div className="text-center md:w-7/12 mx-auto space-y-8">
+      <div className="text-center md:w-7/12 mx-auto space-y-8 p-2 md:p-0">
         <motion.h3
           initial={{ opacity: 0, x: -34 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="md:text-7xl text-5xl"
+          viewport={{ once: true, amount: 0.8 }}
+          className="md:text-7xl text-4xl"
         >
           Why Choose <br className="hidden md:block" /> Softwarechamber
         </motion.h3>
@@ -71,7 +72,8 @@ const FeaturesSection = () => {
           initial={{ opacity: 0, x: 34 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="md:text-2xl text-xl"
+          viewport={{ once: true, amount: 0.8 }}
+          className="md:text-2xl"
         >
           Deliver personalized experiences to your customers with AI-powered
           recommendation engines and dynamic content generation.
@@ -83,10 +85,10 @@ const FeaturesSection = () => {
           whileTap={{ scale: 0.9 }}
           initial={{ opacity: 0, y: 44 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="flex gap-8 items-center bg-gradient-to-l from-[#2CCEBA] to-[#16AD71] px-5 py-2 rounded-full mx-auto text-white cursor-pointer"
+          className="flex gap-8 items-center bg-gradient-to-l from-[#2CCEBA] to-[#16AD71] px-5 py-2 rounded-full mx-auto text-white cursor-pointer group"
         >
           Let's Discuss{" "}
-          <span className="mt-1 bg-gray-100 p-2 rounded-full text-black -rotate-40">
+          <span className="mt-1 bg-gray-100 p-2 rounded-full text-black -rotate-45 group-hover:rotate-0 transition-all duration-300 group-hover:translate-x-2">
             <GoArrowRight size={20} />
           </span>
         </motion.button>

@@ -42,9 +42,14 @@ const DevProcess = () => {
         </motion.div>
       </div>
 
-      <div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.4 }}
+      >
         <ArcFlow></ArcFlow>
-      </div>
+      </motion.div>
 
       <div className="">
         <Image
@@ -52,7 +57,7 @@ const DevProcess = () => {
           alt="development process"
           width={1000}
           height={1000}
-          className="md:w-[calc(100vw-180px)] w-[calc(0vw-100px)] h-auto absolute bottom-0 left-0 right-0 mx-auto"
+          className="md:w-[calc(100vw-180px)] w-[calc(0vw-100px)] h-auto absolute bottom-0 left-0 right-0 mx-auto animate-pulse"
         />
       </div>
       {/* background images */}
