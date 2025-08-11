@@ -8,8 +8,9 @@ import { motion } from "motion/react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  
   return (
-    <nav className="w-11/12 mx-auto">
+    <nav className="w-11/12 mx-auto fixed top-6 md:top-10 left-0 right-0 z-50">
       <ul className="flex justify-between items-center">
         <li>
           <Logo></Logo>

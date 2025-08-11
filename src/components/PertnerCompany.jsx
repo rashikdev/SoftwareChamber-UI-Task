@@ -89,7 +89,11 @@ const PertnerCompany = () => {
                 className="flex items-center gap-4 bg-gradient-to-b from-[#2CCEBA] to-[#2CCEBA]/5 px-6 py-2 rounded-full grayscale-100 hover:grayscale-0 cursor-pointer"
               >
                 <div className="bg-white p-2 md:p-3 rounded-full">
-                  <img src={pertner.icon} alt="" className="md:w-6 w-5" />
+                  <img
+                    src={pertner.icon}
+                    alt=""
+                    className="md:w-6 md:h-6 w-5 h-5"
+                  />
                 </div>
                 <h4 className="md:text-2xl">{pertner.name}</h4>
               </motion.div>
@@ -121,7 +125,11 @@ const PertnerCompany = () => {
               className="flex items-center gap-4 bg-gradient-to-b from-[#2CCEBA] to-[#2CCEBA]/5 px-6 w-fit py-2 rounded-full grayscale-100 hover:grayscale-0 cursor-pointer"
             >
               <div className="bg-white p-2 md:p-3 rounded-full">
-                <img src={thirdPertners.icon} alt="" className="md:w-6 w-5" />
+                <img
+                  src={thirdPertners.icon}
+                  alt=""
+                  className="md:w-6 md:h-6 w-5 h-5"
+                />
               </div>
               <h4 className="md:text-2xl">{thirdPertners.name}</h4>
             </motion.div>

@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       <header className="bg-[#0E0E17] text-white">
-        <div className="fixed top-6 md:top-10 left-0 right-0 z-50">
+        <div className="">
           <Navbar></Navbar>
         </div>
         <Banner></Banner>
