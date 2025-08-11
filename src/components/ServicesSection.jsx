@@ -89,13 +89,13 @@ const ServicesSection = () => {
       {/* service card */}
       <div>
         <div className="flex justify-between items-center">
-          <h3 className="text-3xl sm:text-4xl lg:text-6xl font-semibold">
+          <h3 className="md:text-6xl text-2xl font-semibold">
             Services{" "}
             <span>
               <img
                 src="/assets/serviceStar.png"
                 alt=""
-                className="w-10 h-10 inline-block animate-pulse"
+                className="md:w-10 md:h-10 w-6 inline-block animate-pulse"
               />
             </span>
           </h3>

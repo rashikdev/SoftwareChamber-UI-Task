@@ -60,15 +60,15 @@ const PertnerCompany = () => {
   };
 
   return (
-    <section className="bg-[url('/assets/pertnersImg/BannerGlow1.png')] bg-cover bg-no-repeat bg-center bg-[#0E0E17] relative text-white py-20 md:px-8 px-5 z-40 overflow-hidden">
+    <section className="bg-[url('/assets/pertnersImg/BannerGlow1.png')] bg-cover bg-no-repeat bg-center bg-[#0E0E17] relative text-white py-20 md:px-8 px-3 z-40 overflow-hidden">
       {/* text and pertners logo */}
-      <div className="flex flex-col md:flex-row justify-between items-center z-30">
+      <div className="flex flex-col md:flex-row justify-between items-center z-30 gap-10">
         <motion.h3
           initial={{ opacity: 0, y: 54, scale: 0.9 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true, amount: 0.5 }}
-          className="md:text-[93px] text-4xl md:leading-24 text-center md:text-left"
+          viewport={{ once: true }}
+          className="md:text-[93px] text-3xl md:leading-24 text-center md:text-left"
         >
           Our Stack Powers of <br className="hidden md:block" /> the{" "}
           <span className="text-[#808080]">World’s</span> Most{" "}

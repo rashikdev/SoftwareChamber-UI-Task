@@ -26,7 +26,7 @@ const DevProcess = () => {
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="md:text-2xl text-[#808080] pb-5 px-5 md:px-0"
+          className="md:text-2xl text-[17px] text-[#808080] pb-5 px-5 md:px-0"
         >
           Deliver personalized experiences to your customers with AI-powered
           recommendation <br className="hidden md:block" /> engines and dynamic

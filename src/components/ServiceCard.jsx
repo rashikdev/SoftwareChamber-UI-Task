@@ -56,9 +56,9 @@ const ServiceCard = () => {
               service.id === 2 ? "bg-[#27B4A3] text-white" : "bg-[#f3f3f3]"
             }`}
           >
-            <h3 className="lg:text-[44px] text-3xl">{service.title}</h3>
+            <h3 className="md:text-[44px] text-2xl">{service.title}</h3>
             <p
-              className={`text-2xl group-hover:text-white ${
+              className={`md:text-2xl text-lg group-hover:text-white ${
                 service.id === 2 ? "text-white" : "text-[#808080]"
               }`}
             >

@@ -38,13 +38,13 @@ const FAQSection = () => {
 
   return (
     <div className="py-10 text-black">
-      <div className="w-11/12 mx-auto text-center space-y-10">
+      <div className="md:w-11/12 mx-auto text-center space-y-10">
         {/* Heading */}
         <motion.h3
           initial={{ opacity: 0, y: 24, scale: 0.9 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true, amount: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="px-5"
         >
           <p className="text-3xl sm:text-4xl lg:text-[4rem] leading-tight font-semibold">
@@ -68,7 +68,7 @@ const FAQSection = () => {
         </motion.h3>
 
         {/* Top bar */}
-        <div className="flex justify-between font-semibold items-center">
+        <div className="flex justify-between font-semibold items-center px-4 md:px-0">
           <p className="md:text-7xl text-4xl">FAQ</p>
           <p className="flex items-center gap-5 md:text-2xl text-xl cursor-pointer hover:text-[#2CCEBA] transition-colors group">
             All FAQ{" "}

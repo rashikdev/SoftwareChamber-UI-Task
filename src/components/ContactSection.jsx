@@ -24,7 +24,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-xl md:w-130 mx-auto text-[#808080]"
+          className="md:text-xl md:w-130 mx-auto text-[#808080]"
         >
           Deliver personalized experiences to your customers with AI-powered
           recommendation engines and dynamic content generation.
@@ -32,7 +32,7 @@ const ContactSection = () => {
       </div>
 
       {/* contact form */}
-      <div className="flex items-center md:gap-8 mt-20">
+      <div className="flex items-center md:gap-8 md:mt-20 mt-8">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -53,8 +53,8 @@ const ContactSection = () => {
         initial={{ opacity: 0, x: 124 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true, amount: 0.5 }}
-        className="flex-1">
+        viewport={{ once: true }}
+        className="md:flex-1">
           <ContactForm></ContactForm>
         </motion.div>
       </div>

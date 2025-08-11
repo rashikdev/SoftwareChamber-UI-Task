@@ -100,7 +100,7 @@ const FeaturesSection = () => {
         variants={containerVariant}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true }}
         className="w-11/12 mx-auto grid md:grid-cols-4 gap-5 pb-10"
       >
         {features.map((feature) => (
