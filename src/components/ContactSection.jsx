@@ -53,7 +53,7 @@ const ContactSection = () => {
         initial={{ opacity: 0, x: 124 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.5 }}
         className="md:flex-1">
           <ContactForm></ContactForm>
         </motion.div>

@@ -85,7 +85,7 @@ export default function CustomerReviewSection() {
                   <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.2 }}
+                    viewport={{ once: true, amount: 0.2 }}
                     variants={{
                       hidden: {},
                       visible: { transition: { staggerChildren: 0.06 } },
@@ -107,8 +107,8 @@ export default function CustomerReviewSection() {
                         visible: { opacity: 1, y: 0 },
                       }}
                     >
-                      <h4 className="text-2xl">{review.name}</h4>
-                      <p>{review.role}</p>
+                      <h4 className="md:text-2xl text-xl">{review.name}</h4>
+                      <p className="text-[#808080]">{review.role}</p>
                       <motion.div
                         className="flex gap-1 mt-2"
                         variants={{

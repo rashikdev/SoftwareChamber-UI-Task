@@ -3,7 +3,7 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <div className="">
+    <div className="backdrop-blur-md">
       <Link href="/">
         <img
           src="/assets/logo.png"

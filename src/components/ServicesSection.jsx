@@ -47,7 +47,7 @@ const ServicesSection = () => {
           initial={{ scale: 0.9 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="flex justify-center"
         >
           <Image

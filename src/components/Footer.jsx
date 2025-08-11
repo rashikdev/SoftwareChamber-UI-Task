@@ -91,14 +91,14 @@ const Footer = () => {
                 Social media
               </h5>
               <motion.div
-                // variants={containerVariants}
+                variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
                 className="grid grid-cols-3 gap-3"
               >
                 {socialMedia.map((item) => (
                   <motion.div
-                    // variants={itemVariants}
+                    variants={itemVariants}
                     whileHover={{ scale: 1.1 }}
                     key={item.id}
                     className="flex items-center gap-2 md:text-xl text-[#A6A6A6] hover:text-white cursor-pointer group"
@@ -142,7 +142,7 @@ const Footer = () => {
             initial={{ opacity: 0, x: 120 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.2 }}
             className="flex justify-center lg:justify-end"
           >
             <Image

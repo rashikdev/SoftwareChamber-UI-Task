@@ -47,7 +47,7 @@ const Banner = () => {
         height={500}
         placeholder="blur"
         blurDataURL="/assets/BannerStar.png"
-        className="w-[90vw] md:h-[90vh] h-screen absolute top-20 left-0 -z-10 animate-pulse "
+        className="w-[90vw] md:h-[80vh] h-[40vh] absolute top-20 left-0 -z-10 animate-pulse"
       />
     </div>
   );
