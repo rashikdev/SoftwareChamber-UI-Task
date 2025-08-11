@@ -53,7 +53,10 @@ const ContactForm = () => {
           type="submit"
           className="flex justify-between group items-center gap-14 bg-gradient-to-l from-teal-400 to-teal-500 text-white w-50 rounded-full font-semibold px-4 py-2 cursor-pointer pl-7"
         >
-          Submit <span className="text-2xl bg-white text-black rounded-full group-hover:translate-x-2  transition duration-500 p-2"><FiArrowRight /></span>
+          Submit{" "}
+          <span className="text-2xl bg-white text-black rounded-full group-hover:translate-x-2  transition duration-500 p-2">
+            <FiArrowRight />
+          </span>
         </button>
       </form>
     </div>

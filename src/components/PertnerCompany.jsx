@@ -67,7 +67,7 @@ const PertnerCompany = () => {
           initial={{ opacity: 0, y: 54, scale: 0.9 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true, amount: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="md:text-[93px] text-4xl md:leading-24 text-center md:text-left"
         >
           Our Stack Powers of <br className="hidden md:block" /> the{" "}
@@ -76,14 +76,14 @@ const PertnerCompany = () => {
           <span className="text-[#808080]">Beloved Companies</span>
         </motion.h3>
         <motion.div
-          variants={containerVerient}
+          // variants={containerVerient}
           initial="hidden"
           whileInView="show"
         >
           <div className="flex gap-5 my-5">
             {firstPertners.map((pertner) => (
               <motion.div
-                variants={itemVariant}
+                // variants={itemVariant}
                 whileHover={{ scale: 1.1 }}
                 key={pertner.id}
                 className="flex items-center gap-4 bg-gradient-to-b from-[#2CCEBA] to-[#2CCEBA]/5 px-6 py-2 rounded-full grayscale-100 hover:grayscale-0 cursor-pointer"
@@ -98,7 +98,7 @@ const PertnerCompany = () => {
           <div className="flex gap-5 my-5 md:-ml-18">
             {secondPertners.map((pertner) => (
               <motion.div
-                variants={itemVariant}
+                // variants={itemVariant}
                 whileHover={{ scale: 1.1 }}
                 key={pertner.id}
                 className="flex items-center gap-4 bg-gradient-to-b from-[#2CCEBA] to-[#2CCEBA]/5 px-6 py-2 rounded-full grayscale-100 hover:grayscale-0 cursor-pointer"
@@ -116,7 +116,7 @@ const PertnerCompany = () => {
           </div>
           <div className="md:ml-14 ml-24">
             <motion.div
-              variants={itemVariant}
+              // variants={itemVariant}
               whileHover={{ scale: 1.1 }}
               className="flex items-center gap-4 bg-gradient-to-b from-[#2CCEBA] to-[#2CCEBA]/5 px-6 w-fit py-2 rounded-full grayscale-100 hover:grayscale-0 cursor-pointer"
             >
@@ -143,7 +143,7 @@ const PertnerCompany = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true, amount: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="text-[5vw]"
           >
             Uncover the Design and Development Projects{" "}

@@ -85,6 +85,7 @@ const FeaturesSection = () => {
           whileTap={{ scale: 0.9 }}
           initial={{ opacity: 0, y: 44 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="flex gap-8 items-center bg-gradient-to-l from-[#2CCEBA] to-[#16AD71] px-5 py-2 rounded-full mx-auto text-white cursor-pointer group"
         >
           Let's Discuss{" "}
@@ -99,6 +100,7 @@ const FeaturesSection = () => {
         variants={containerVariant}
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true, amount: 0.5 }}
         className="w-11/12 mx-auto grid md:grid-cols-4 gap-5 pb-10"
       >
         {features.map((feature) => (

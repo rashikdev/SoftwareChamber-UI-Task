@@ -13,7 +13,7 @@ const ContactSection = () => {
           initial={{ opacity: 0, x: 54 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="md:text-7xl text-3xl font-bold"
         >
           Let’s talk about your next <br className="hidden md:block" /> project.
@@ -23,7 +23,7 @@ const ContactSection = () => {
           initial={{ opacity: 0, y: 54 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="text-xl md:w-130 mx-auto text-[#808080]"
         >
           Deliver personalized experiences to your customers with AI-powered
@@ -37,7 +37,7 @@ const ContactSection = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          // viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
         >
           <Image
             src="/assets/contact.png"
@@ -53,7 +53,7 @@ const ContactSection = () => {
         initial={{ opacity: 0, x: 124 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        // viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.5 }}
         className="flex-1">
           <ContactForm></ContactForm>
         </motion.div>

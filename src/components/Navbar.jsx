@@ -16,8 +16,8 @@ const Navbar = () => {
         </li>
         <li>
           <div className="flex gap-4 md:gap-8">
-            <div className="z-50">
-              <ContactBtn sz={true}></ContactBtn>
+            <div className="z-50 hidden md:block">
+              <ContactBtn nav={true}></ContactBtn>
             </div>
             <motion.button
               whileTap={{ scale: 0.9 }}

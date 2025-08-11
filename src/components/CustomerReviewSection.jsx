@@ -55,7 +55,7 @@ export default function CustomerReviewSection() {
       initial={{ opacity: 0, y: 24, scale: 0.9 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.8 }}
-      viewport={{ once: false, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.5 }}
       className="md:w-10/12 w-11/12 mx-auto rounded-3xl bg-black h-[40vh] border-t-[1.78px] border-[#2CCEBA]/60 mt-20 overflow-hidden">
         <Swiper
           modules={[Autoplay, EffectFade]}

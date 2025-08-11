@@ -2,15 +2,12 @@
 import React from "react";
 import { AiOutlineLogout } from "react-icons/ai";
 import { motion } from "motion/react";
-const ContactBtn = ({ sz }) => {
+const ContactBtn = ({ nav }) => {
   return (
     <motion.button
       whileTap={{ scale: 0.9 }}
-      className={`flex items-center justify-between cursor-pointer ${
-        sz ? "md:w-[167px]" : "md:w-[207px]"
-      } w-[130px] gap-2 md:py-2 ${
-        sz ? "md:px-2" : "md:px-4"
-      } p-[6px] rounded-full bg-gradient-to-r from-zinc-800 to-zinc-400 md:text-xl border-[1.78px] border-zinc-400 md:z-50 backdrop-blur-md transition-shadow duration-300 hover:shadow-[0_0_12px_3px_rgba(39,180,163,0.7)]`}
+      className={`flex justify-between items-center  py-2 rounded-full bg-gradient-to-r from-zinc-800 to-zinc-400 md:text-xl
+      text-sm border-[1.78px] border-zinc-400 cursor-pointer ${nav ? "md:w-[176px] px-3" : "md:w-[207px] gap-5 px-5"}`}
     >
       <span>Contact Us</span>
       <span className="bg-white rounded-full md:p-[7px] p-1">
