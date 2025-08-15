@@ -52,15 +52,11 @@ const ServiceCard = () => {
       {services.map((service) => (
         <motion.div key={service.id} variants={itemVariant}>
           <motion.div
-            className={`md:h-[420px] h-fit p-6 rounded-4xl flex flex-col gap-4 md:gap-0 justify-between hover:bg-[#27B4A3] hover:text-white cursor-default transition-all duration-300 group ${
-              service.id === 2 ? "bg-[#27B4A3] text-white" : "bg-[#f3f3f3]"
-            }`}
+            className={`md:h-[420px] h-fit p-6 rounded-4xl flex flex-col gap-4 md:gap-0 justify-between hover:bg-[#27B4A3] hover:text-white cursor-default transition-all duration-300 group bg-[#f3f3f3]`}
           >
             <h3 className="md:text-[44px] text-2xl">{service.title}</h3>
             <p
-              className={`md:text-2xl text-lg group-hover:text-white ${
-                service.id === 2 ? "text-white" : "text-[#808080]"
-              }`}
+              className={`md:text-2xl text-lg group-hover:text-white text-[#808080] `}
             >
               {service.text}
             </p>
