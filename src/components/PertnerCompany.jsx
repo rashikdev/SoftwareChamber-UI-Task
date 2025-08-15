@@ -16,7 +16,7 @@ const PertnerCompany = () => {
     {
       id: 2,
       name: "TalentQl",
-      icon: "/assets/pertnersImg/talentql.png",
+      icon: "/assets/pertnersImg/talentQl.png",
     },
     {
       id: 3,
